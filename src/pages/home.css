@@ -1,0 +1,157 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Small banner adjustments */
+  .small-banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .main-banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card {
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* For smaller screens, adjust the columns in the grid */
+  @media (max-width: 768px) {
+    /* Adjusting main wrapper for smaller screens */
+    .home-wrapper-1 {
+      padding: 20px 0;
+    }
+    
+    .home-wrapper-2 {
+      padding: 15px 0;
+    }
+  
+    /* Change grid layout for smaller screens */
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col-6, .col-3 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    /* Small Banner and main banner image adjustments */
+    .small-banner {
+      margin-bottom: 20px;
+    }
+    
+    /* Main banner changes */
+    .main-banner {
+      margin-bottom: 20px;
+    }
+  
+    .categories {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .categories .d-flex {
+      justify-content: center;
+    }
+  
+    .categories div {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Featured Products section */
+    .featured-wrapper .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Famous Products section */
+    .famous-wrapper .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Popular Products section */
+    .popular-wrapper .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Adjust product card images for small screens */
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Adjust font size for smaller screens */
+    h4, h5, h6 {
+      font-size: 1.2rem;
+    }
+  
+    .section-heading {
+      font-size: 1.5rem;
+    }
+  
+    /* Marquee styling */
+    .marquee-inner-wrapper {
+      padding: 20px;
+    }
+  
+    /* Blog card adjustments */
+    .blog-wrapper .col-3 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Extra small screens (Mobile) */
+  @media (max-width: 480px) {
+    /* Adjust image size */
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Reduce the section title sizes */
+    .section-heading {
+      font-size: 1.3rem;
+    }
+  
+    /* Adjust the product card details for small screens */
+    .product-details h5 {
+      font-size: 1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  
+    /* Adjust buttons and images inside product cards */
+    .product-details .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  
+    .product-card .action-bar {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+  }
+  
